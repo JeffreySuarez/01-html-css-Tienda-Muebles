@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>e-commerce - Contacto</title>
+</head>
+
+<body>
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- Se crea el header titulo y la barra de navegacion -->
+    <header>
+        <h1 class="titulo-inicio">Tienda <span class="titulo-inicio-span">Muebles</span> </h1>
+        <div class="contenido-barra-navegacion">
+            <nav class="navegacion-inicio">
+                <a href="../index.html">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./tienda.html">Tienda</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./galeria.html">Galería</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+
+
+
+    </header>
+    <!-- -------------------------------------------------------------- -->
+    <main class="contenido-main contenedor-productos">
+        <h2>Contáctenos</h2>
+
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" placeholder="agrega tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto: </label>
+                    <input type="text" id="asunto" placeholder="Agrega tu asunto" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="agrega tu Email" required>
+                </div>
+                <div class="campo">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" placeholder="agrega tu Teléfono" required>
+                </div>
+                <div class="campo">
+                    <label for="date">Fecha: </label>
+                    <input type="date" id="date" placeholder="agrega la fecha" required>
+                </div>
+                <div class="campo">
+                    <label for="message">Mensaje: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="pais" required>
+                        <option disabled value="">---Seleccione---</option>
+                        <option value="CO">Colombia</option>
+                        <option value="MX">México</option>
+                        <option value="PR">Perú</option>
+                        <option value="">Venezuela</option>
+                        <option value="AR">Argentina</option>
+                        <option value="">Uruguay</option>
+                        <option value="">Brasil</option>
+                        <option value="CR">Chile</option>
+
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Extra</legend>
+
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input type="text" id="categoria" list="categorias" name="categorias" required>
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Interior">
+                        <option value="Recaramaras">
+                    </datalist>
+                </div>
+
+            </fieldset>
+            <button type="submit">Enviar Formulario</button>
+        </form>
+
+    </main>
+
+    <!-- -------------------------------------------------------------- -->
+
+
+
+    <footer class="footer">
+        <div class="contenido-footer">
+            <div class="contenido-seccion">
+
+                <h3>Categorías</h3>
+                <nav>
+                    <a href=" #">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+
+
+            </div>
+
+            <div class="contenido-seccion">
+
+                <h3>Sobre Nosotros</h3>
+                <nav>
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión, Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                </nav>
+
+
+            </div>
+            <div class="contenido-seccion">
+
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+        <p>Copyright&copy; 2022 - Pagina creada por Jeffrey Suarez - Todos los derechos reservados</p>
+    </footer>
+
+
+
+</body>
+
+</html>
